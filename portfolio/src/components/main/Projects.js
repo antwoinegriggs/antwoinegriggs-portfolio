@@ -11,10 +11,11 @@ export default function Projects() {
         <div id="project-wrapper">
           <div id="text-container">
             <p id="text">
-              Languages: HTML, CSS, JavaScript, API <br />
-              Description: Built a trivia game using Jeopardy API <br />
-              Exercise: API data handling, Arrays, DOM Objects, Modulization,
-              Events, Conditions
+              Languages
+              <br /> HTML, CSS, JavaScript, API <br />
+              <br />
+              Description: <br />
+              Built a trivia game using API
               <a
                 href="https://github.com/antwoinegriggs/Trivia-Game"
                 rel="noreferrer"
@@ -31,10 +32,12 @@ export default function Projects() {
         <div id="project-wrapper">
           <div id="text-container">
             <p id="text">
-              Languages: HTML, CSS, JavaScript, API <br />
-              Description: Utilized Marvel API to design a catalog for Marvel
-              Characters <br />
-              Exercise: API Data Handling, DOM Modulization, Events
+              Languages
+              <br /> HTML, CSS, JavaScript, API <br />
+              <br />
+              Description:
+              <br /> Utilized Marvel API to design a catalog for Marvel
+              Characters
               <a
                 href="https://github.com/antwoinegriggs/marvel-character-catalog"
                 rel="noreferrer"
@@ -52,13 +55,13 @@ export default function Projects() {
         <div id="project-wrapper">
           <div id="text-container">
             <p id="text">
-              Languages: HTML, CSS, JavaScript <br />
-              Library: React.js
+              Languages
+              <br /> HTML, CSS, JavaScript, React.js
               <br />
-              Description: Random dice roll that generator and render dice
-              images
               <br />
-              Exercise: React, Components, Objects, Hooks, State management
+              Description
+              <br /> Random dice roll that generator and render dice images
+              <br />
               <a
                 href="https://github.com/antwoinegriggs/React-Dice-Roller"
                 rel="noreferrer"

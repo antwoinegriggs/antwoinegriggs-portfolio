@@ -7,8 +7,8 @@ export default function Main(props) {
   return (
     <React.Fragment>
       <Landing />
-      {/* <Technology />
-      <Projects /> */}
+      <Technology />
+      <Projects />
     </React.Fragment>
   );
 }

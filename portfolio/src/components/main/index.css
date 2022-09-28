@@ -1,4 +1,5 @@
 * {
+  margin: 0;
   font-family: "ralewayblack", Arial, sans-serif;
 }
 
@@ -43,24 +44,63 @@
   margin-top: 75px;
   margin-bottom: -0.01rem;
 }
+/* Technology */
+#technology {
+  background-color: #cc0000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0%;
+}
 
+#tech-title {
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+#tech-images-container {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#tech-images-container img {
+  width: 125px;
+  transition: transform 0.2s; /* Animation */
+}
+#tech-img {
+  margin: 5%;
+  max-width: 100%;
+  width: 100%;
+}
+
+#tech-images-container img:hover {
+  transform: scale(1.5);
+}
 /* Projects */
 #project-section {
   background-color: white;
   width: 100%;
-  height: 435px;
+  padding: 4% 0%;
+  text-align: center;
 }
 #project-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  height: 90%;
+  justify-content: center;
   width: 100%;
+  padding: 2% 0%;
 }
 
 #project-container img {
-  height: 300px;
-  width: 300px;
+  height: 302px;
+  width: 302px;
   border-radius: 1rem;
 }
 
@@ -68,11 +108,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 2%;
 }
 
 #project-wrapper img {
   background-color: black;
-  margin-top: -315.5px;
+  position: absolute;
 }
 
 #project-wrapper:hover img {
@@ -81,16 +122,17 @@
 
 #project-title {
   color: #cc0000;
-  margin: 70px;
   font-size: 40px;
   font-weight: lighter;
+  font-weight: 700;
 }
 /* Trivia Game */
 #trivia-title {
   font-size: 30px;
   color: white;
-  margin-top: -300px;
-  margin-left: -100px;
+  position: absolute;
+  margin-right: 100px;
+  margin-top: 10px;
 }
 
 #project-wrapper:hover #trivia-title {
@@ -102,7 +144,8 @@
   font-size: 20px;
   background-color: #cc0000;
   color: white;
-  margin-top: -175px;
+  position: absolute;
+  margin-top: 165px;
 }
 
 #project-wrapper:hover #heroes-title {
@@ -112,9 +155,10 @@
 /* Dice Roller */
 #dice-title {
   font-size: 26px;
-  font-weight: lighter;
+  font-weight: 700;
   color: white;
-  margin-top: -300px;
+  position: absolute;
+  margin-top: 10px;
 }
 
 #project-wrapper:hover #dice-title {
@@ -137,21 +181,21 @@
   font-weight: lighter;
   line-height: 1.5;
   border-radius: 1rem;
-  text-align: left;
+  text-align: center;
   padding: 1.5rem;
   justify-content: space-around;
   align-items: center;
 }
 
 #btn-projects {
-  height: 50px;
-  width: 150px;
+  height: 40px;
+  width: 120px;
   background-color: white;
   border: solid #cc0000 0.15rem;
-  border-radius: 1.5rem;
-  font-size: 16px;
+  border-radius: 1.75rem;
+  font-size: 17px;
   color: #cc0000;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 #btn-projects:hover {
@@ -161,59 +205,18 @@
 
 #btn-github {
   height: 50px;
-  width: 245px;
+  width: 200px;
   background-color: transparent;
   border: solid #cc0000 0.15rem;
-  border-radius: 1.5rem;
-  font-size: 16px;
+  border-radius: 1.9rem;
+  font-size: 18px;
   color: #cc0000;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 #btn-github:hover {
   background-color: #cc0000;
   color: white;
-}
-
-/* Technology */
-#technology {
-  background-color: #cc0000;
-  width: 100%;
-  height: 435px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-#tech-title {
-  color: white;
-  font-size: 40px;
-  font-weight: lighter;
-  margin: 50px;
-}
-
-#tech-images-container {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#tech-images-container img {
-  margin: auto;
-  height: 125px;
-  width: 125px;
-  max-height: 100%;
-  max-width: 100%;
-  transition: transform 0.2s; /* Animation */
-}
-
-#tech-images-container img:hover {
-  transform: scale(1.5);
 }
 
 @media (max-width: 550px) {
@@ -231,6 +234,23 @@
   }
 
   #tech-images-container {
+    flex-direction: column;
+  }
+  #tech-img {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 800px) {
+  #sde-photo {
+    max-width: 100%;
+    width: 100%;
+  }
+  #tech-images-container img {
+  }
+}
+@media (max-width: 950px) {
+  #project-container {
     flex-direction: column;
   }
 }
